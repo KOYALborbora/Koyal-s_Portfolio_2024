@@ -1,0 +1,208 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'arial',sans-serif;
+
+}
+section
+{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section header
+{
+    position:absolute;
+    top:0;
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+    padding:20px;
+}
+section header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li
+{
+    list-style: none;
+    margin-left:20px;
+}
+section header ul li a
+{
+    color:#111;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+section header ul li button
+{
+    background-color: #4584ef;
+    border:none;
+    outline:none;
+    padding:8px 14px;
+    color:#fff;
+    font-size:20px;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor:pointer;
+} 
+section .main
+{
+    width:360px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+section .main .searchBox
+{
+    position:relative;
+    width: 200%;
+    margin-top: 20px;
+}
+section .main .searchBox .search
+{
+    width: 100%;
+    height: 5vh;
+    font-size: 18px;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border:1px solid #ccc;
+    box-shadow: 0  6px rgba(32, 33, 36, 0.28);
+}
+section .main .searchBox .icons
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+section .main .buttons
+{
+    margin-top: 20px;
+}
+section .main .buttons button
+{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    border:1px solid transparent;
+    outline: none;
+}
+/* .search 
+{
+    font-size: 24px;
+    font-family: monospace;
+} */
+section .main .buttons button:hover
+{
+    border: 1px solid #ccc;
+}
+section .main .languages
+{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 170%;
+    justify-content: space-around;
+
+    
+}
+
+section .main .languages li
+{
+    list-style: none;
+    
+    font-size:13px ;
+    text-align: start;
+    
+
+}
+section .main .languages li a
+{
+    text-decoration: none;
+    color: #1a0dab;
+}
+section .main .languages li a:hover
+{
+    text-decoration: underline;
+}
+section .footer
+{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    background: #f2f2f2;
+}
+section .footer .row
+{
+    padding: 15px 25px;
+    border-top: 1px splid rgba(0,0,0,0.05);
+}
+section .footer .row.row2
+{
+    display: flex;
+    justify-content: space-between;
+}
+section .footer .row.row2 ul
+{
+    display: flex;
+}
+section .footer .row.row2 ul li
+{
+    list-style: none;
+}
+section .footer .row.row2 ul li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right:25px;
+}
+section .footer .row.row2 ul::(nth-child(2)) li a
+{
+    text-decoration: none;
+    font-size: 14px;
+    color: #5f6368;
+    margin-right:0px;
+    margin-left: 25px;
+}
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+  }
+  
+  #progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4584ef;
+    transition: width 0.4s;
+  }
+
+input::placeholder
+{
+    color: black;
+}
